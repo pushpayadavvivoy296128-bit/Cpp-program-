@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[100], n;
+    
+    cout << "Enter size of array: ";
+    cin >> n;
+    
+    cout << "Enter " << n << " values: ";
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    
+    cout << "You had entered these values: ";
+    for(int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    } 
+    // ERROR FIXED HERE: Added the missing closing brace for the loop above
+    
+    cout << "\nInsert new value: ";
+    int val;
+    cin >> val;
+    
+    // Appending the new value at the end of the array
+    arr[n] = val;
+    
+    cout << "After insertion of new val array is: ";
+    for(int i = 0; i <= n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    
+    return 0;
+}
