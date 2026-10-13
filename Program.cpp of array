@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int arr[100], n;
+
+    cout<<"Enter size of array ";
+    cin>>n;
+
+    cout<<"Enter "<<n<<" elements ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+
+    cout<<"Enter new value ";
+    int val;
+    cin>>val;
+
+    int pos;
+    cout<<"Enter position ";
+    cin>>pos;
+
+    if(pos>=1 && pos<=n)
+    {
+        arr[pos-1]=val;
+    }
+    else
+    {
+        cout<<"Invalid position";
+        return 0;
+    }
+
+    cout<<"Updated array is ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+
+    return 0;
+}
